@@ -6,46 +6,46 @@ using namespace std;
 // Driver code
 int main()
 {
-	char op;
-	float num1, num2;
+	char opr;
+	float n1, n2;
 
-	// Allowing user to choose operators 
+	// Allowing user to Enter operators 
 	// i.e. +, -, *, /
 	cout<<"SELECT DESIRED OPERATOR"<<endl;
-	cin >> op;  //taking input from user for operator
+	cin >> opr;  //taking input from user for operator
 
 	// enter both numbers
 	cout<<"Enter the operands "<<endl;
-	cin >> num1 >> num2;
+	cin >> n1 >> n2;
 
-	// Switch statement begins
-	switch (op) {
-	// If user enter +
+	// Using Switch Staement for selection of operator
+	switch (opr) {
+	// If entry is  +
 	case '+':
-		cout << num1 + num2;
+		cout << n1 + n2;
 		break;
 
-	// If user enter -
+	// If entry is -
 	case '-':
-		cout << num1 - num2;
+		cout << n1 - n2;
 		break;
 
-	// If user enter *
+	// If  entry is  *
 	case '*':
-		cout << num1 * num2;
+		cout << n1 * n2;
 		break;
 
-	// If user enter /
+	// If  entry is /
 	case '/':
-		cout << num1 / num2;
+		cout << n1 / n2;
 		break;
 
-	// If the operator is other than +, -, * or /,
-	// error message will display
+	// If the operator is not one of than +, -, * or /,
+	// error message will  be displayed
 	default:
-		cout << "Error! operator is not correct";
+		cout << "Error! operator is not valid ";
 	}
-	// switch statement ends
+	// switch statement ends here
 
 	return 0;
 }
